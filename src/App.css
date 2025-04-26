@@ -1,0 +1,140 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.gen-interface{
+  background-color: #007EA7;
+  width: 630px;
+  padding: 24px;
+  border: 2px solid grey;
+  border-radius: 1.5rem;
+  box-shadow: rgb(129, 127, 127) 0px 10px 25px;
+  z-index: 1;
+}
+
+.gen-interface:hover{
+  box-shadow: rgb(129, 127, 127) 0px 10px 20px;
+  opacity: 0.9;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form input{
+  width: 600px;
+  padding: 10px;
+  font-size: 1.25rem;
+  background-color: aliceblue;
+  color: black;
+  border-radius: 8px ;
+  border: 2px solid #2F4F4F;
+}
+
+.suggestions-list {
+  list-style-type: none; /* ✅ Removes the bullets */
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff; /* ✅ Matches input background */
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  width: 622px;
+  z-index: 1000;
+}
+
+.suggestions-list li {
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.form button{
+  margin: 4px;
+  font-size: 1rem;
+  border: 2px solid #2F4F4F;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-weight: 550;
+}
+
+.form-report{
+  background-color: green;
+}
+
+.form-tracker{
+  background-color: #ff7043;
+}
+
+.form button:hover{
+  opacity: 0.75;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+ /* Forecast */
+ .forecast-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.forecast-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+  
+
+}
+
+.forecast-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  background-color: #f0f0f0;
+  color: #333;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  padding: 15px 10px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.forecast-card:hover {
+  transform: scale(1.03);
+}
+
+.forecast-icon {
+  height: 50px;
+  margin: 10px 0;
+}
+
+.forecast-date {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+.forecast-temp {
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
